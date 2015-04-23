@@ -1,0 +1,1 @@
+# friedarts-website
