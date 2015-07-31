@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+http://www.joesnellpdx.com/toggle-navigation-no-javascript/
+<html>
+<head>
+	<style type="text/css">
+		.header-demo {
+  height: 3em;
+  background-color: #999999;
+}
+.header-demo h3 {
+  float: right;
+  margin: 0;
+}
+.menu-link {
+  color: white;
+  text-shadow: none;
+  background-color: black;
+  padding: 0.75em 0.75em 0;
+  height: 3em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+}
+.menu-link:hover {
+  text-decoration: none;
+  background-color: #222222;
+}
+.menu li a {
+  color: #999999;
+  text-shadow: none;
+  text-decoration: none;
+  background-color: #222222;
+  display: inline-block;
+  height: 2em;
+  line-height: 1em;
+  padding: .4em;
+  border-bottom: 1px solid #333333;
+  width: 100%;
+}
+.menu li a:hover {
+  color: #aaa;
+  background-color: #333333;
+}
+body:not(:target) #menu {
+  margin: 0;
+  padding-top: 3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+body:not(:target) #menu li {
+  width: 100%;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+body:not(:target) #menu:target li {
+  height: 2em;
+  line-height: auto;
+  overflow: visible;
+}
+body:not(:target) #menu:target .back {
+  height: 0;
+  line-height: 0;
+}
+body:not(:target) #menu:target .back a {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  height: auto;
+  position: absolute;
+  top: -101em;
+  bottom: -101em;
+  left: 0;
+  right: 0;
+  text-indent: -999em;
+  z-index: -1;
+}
+	</style>
+</head>
+<body>
+	<div id="main" class="main demo">
+  <header id="header" class="header-demo">
+    <!-- Header  Content Here -->
+    <header id="header" class="header-demo">
+  <h3>Site Title</h3>
+  <a id="jump-top" href="#menu" class="menu-link ">Menu</a>
+  <nav id="main-nav" roll="navigation" class="main-nav">
+    <!-- In WordPress, substitute the following <ul> with the ‘primary’ navigation by inserting the following ('primary' refers to the menu slug given in the WordPress theme – dashboard > appearance > menus):
+    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_id' => 'menu' ) ); ?>
+    -->
+    <ul id="menu" class="menu">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Products</a></li>
+  <li><a href="#">About Us</a></li>
+  <li><a href="#">Contact</a></li>
+  <li class="back"><a href="#header">back</a></li>
+</ul>
+  </nav>
+</header>
+  </header>
+  <section id="content" class="content">
+    <!-- Main Content Here -->
+  </section>
+  <footer id="footer" class="footer">
+    <!-- Footer Content Here -->
+  </footer>
+</div>
+</body>
+</html>

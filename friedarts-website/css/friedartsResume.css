@@ -1,0 +1,402 @@
+@charset "UTF-8";
+		html{
+			background-color: #111;
+  			height: 100%;
+		}
+		body{
+			margin:0;
+			padding:0;
+			min-width:100%!important;
+			height: 100%;
+			background-color: #111;
+		}
+		a{
+			text-decoration: none;
+			font-family: avenir;
+			font-size: 11pt;
+			-webkit-transition: opacity 0.2s ease-in-out;
+			-moz-transition: opacity 0.2s ease-in-out;
+			-o-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
+		}
+		a:hover{
+			opacity: 0.8;
+		}
+		p{
+			font-family: avenir;
+			font-size: 11pt;
+		}
+		img{border:0px;width: auto;max-width: 100%; height: auto;margin: auto;}
+		.img{
+			/*background-image: url('IMG-20131020-WA0005.jpg');*/
+			background-color: #00A876;
+			width: 100%
+		}
+/* Header Design  */
+		.header-demo{
+			height: 2em;
+			background-color: #111;
+			/*background: -webkit-linear-gradient(0deg,#555, #333); /* For Safari 
+background: -o-linear-gradient(0deg,#555, #333); /* For Opera 11.1 to 12.0 
+background: -moz-linear-gradient(0deg,#555, #333); /* For Firefox 3.6 to 15 
+background: linear-gradient(0deg,#555, #333); /* Standard syntax */
+			
+		}
+		.header-demo h4{
+			text-align: center;
+			margin: 0;
+			font-family: bold;
+			padding: 2% 1.1%;
+			color: #fff;
+		
+		}
+		#imgcontent{
+			padding: 0.5% 0 0 0;
+			margin: 0;
+		}
+		#Imgcontent .img{border:none;}
+		.aboutMe{
+			padding: 1.1%;
+			background-color: #fff;
+		}
+		.content p{
+			padding-right:1%;
+			padding-left:1%; 
+		}
+		.aboutBody {
+			color:#666;
+			font-family: avenir;
+		}
+		.hello {
+			color: #666;
+			padding-top: 1%;
+			border:none;
+			font-size: 14pt;
+			font-family: archerit;
+		}
+		.bodyThanks{
+			color: #666;
+			border-bottom: 1px solid #666;
+			text-align: right;
+			font-family: archerit;
+			background-color: #fff;
+		}
+		#footerFinale{
+			border-top:1px dotted #666;
+			background-color: #111;
+			width: 100%;
+			height:auto;
+		}
+		#footerFinale p{
+			color:#fff;
+			text-align: center;
+			padding:1%;
+			font-family: archerit;
+		}
+/* INSERT 3 LINE DROP DOWN HERE */
+		.menu-link{
+			color:#555;
+			text-shadow:none;
+			background-color: #fff;
+			padding: 2% ;
+			min-height:2.9%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 1001;
+		  	border-left: 1px solid #bbb;
+		}
+		.menu-link:hover{
+			text-decoration: none;
+			background-color: #00A876;
+			color:#fff;	
+		}
+		.menu li a{
+			color: #555;
+			text-shadow: none;
+			text-decoration: none;
+			background-color: #fff;
+			display: inline-block;
+			height: 1%;
+			line-height: 120%;
+			padding: .4em;
+			border-bottom: 1px solid #bbb;
+			width: 100%;
+
+		}
+		.menu li a:hover{
+			color: #fff;
+  			background-color: #00A876;
+		}
+		
+/* Toggle Menu */
+		body:not(:target) #menu{
+			margin: 0;
+			padding-top:3em;
+			position: absolute;
+			top: -10;
+			right: 10;
+			left: -40;
+			text-align: right;
+			z-index: 1000;
+		}
+		body:not(:target) #menu li{
+			width: 100%;
+			height: 0;
+			line-height: 0em;
+			overflow: hidden;
+
+		}
+		body:not(:target) #menu:target li{
+			height: inherit;
+			line-height: auto;
+			overflow: visible;
+			list-style: none;
+		}
+		body:not(:target) #menu:target .back{
+			height: 0;
+			line-height: 0;
+		}
+		body:not(:target) #menu:target .back a{
+			width: 100%;
+			background-color: transparent;
+			border: none;
+			height: auto;
+			position: absolute;
+			top: -101em;
+			bottom: -101em;
+			left: 0;
+			right: 0;
+			text-indent: -999em;
+			z-index: -1;
+		}
+		body:not(:target) #menu:target{
+			z-index: 1001;
+		}
+		#border{
+			border-bottom: 1px solid #bbb;
+			clear: both;
+			width:100%;
+			margin: 0 auto;
+			background-color: #555;
+			}
+		#cfcontent{
+			text-align: center;
+		}
+		#cfcontent a{
+			color: #00A876;
+			font-family: bold;
+			font-size: 12pt;
+		}
+		#cfcontent a:hover{
+			color: #00A876;
+		}
+/* Resume design */
+    #colorBlock{
+      padding: 0;
+      height: auto;
+      width: 100%;
+      background: #fff;
+      margin: 0;
+    }
+    #colorBlock h4{
+      display: inline-block;
+      padding:0;
+      color: #666;
+      text-align: center;
+      font-family: avenir;
+       border-bottom: 1px solid #111;
+       margin: 0;
+       padding: 10 0 ;
+    }
+    .freelance{
+      width: 100%;
+      height: 1em;
+      margin: 0;
+      padding:1;
+      text-align: center;
+    }
+    #list ul{
+    	list-style: none;
+    	display: block;
+    	margin: 0;
+    	padding: 0;
+    	text-align: center;
+    }
+    #list li{
+    	display: inline-block;
+    	margin: 0;
+    	padding:0 1.1%;
+    	font-family: bold;
+    	color: #00A876;
+    }
+    #list h3{
+    	margin: 0;
+    	padding:0;
+    	font-family: bold;
+    	color: #00A876;
+    }
+    #list a{
+    	color: #00A876;
+    	font-family: bold;
+    }
+    #list a:hover{
+    	color:#666;
+    }
+    .company{
+    	list-style: none;
+    	margin: 0;
+    	padding:0;
+    }
+    #colorBlock .company h4{
+		color:#00A876;
+		padding: 0;
+		margin: 0;
+		border:none;
+    }
+    .aboutMe h3{
+    	margin: 0;
+    	padding: 0 0 0 1.1%;
+    	color: #555;
+    	font-family: avenir;
+    }
+    .position{
+    	color:#555;
+    	list-style: none;
+    	margin:0;
+    	padding:0;
+    	display:block;
+    }
+    .description{
+    	color: #555;
+    	list-style: none;
+    	padding: 0 0 0 5%;
+    }
+    .work{
+    	font-family: avenir;
+    	margin:0;
+    	padding: 1.1%;
+    	list-style: none;
+    }
+    .workLinks a{
+    	color: #00A876;
+    	font-family: bold;
+    }
+    .workLinks a:hover{
+    	color: #666;
+    }
+/*Computer Skills*/
+    .cSkills{
+    	margin: 0;
+    	padding: 1.1%;
+    	font-family: avenir;
+    }
+    .skills{
+    	color:#555;
+    	list-style: none;
+    }
+/*Language*/
+	.languages{
+		margin: 0;
+		padding: 1.1%;
+		font-family: avenir;
+	}
+	.language{
+		list-style: none;
+		color:#555;
+	}
+	.pdf a{
+		color: #00A876;
+		font-family: avenir;		
+	}
+	.pdf a:hover{
+		color: #555;
+	}
+/* This is a normal Screen Width*/
+
+		@media screen and (min-width: 480px){
+			.menu-link{
+				display: none;
+			}
+			body:not(:target) #menu{
+				padding: 0;
+				text-align: right;
+				border-bottom: 1px dotted #666;
+			}
+			body:not(:target) #menu li{
+				display: inline;
+				border: none;
+				list-style: none;
+			}
+			body:not(:target) #menu li a{
+				color:#555;
+				text-shadow:inherit;
+				line-height: 1em;
+				padding:1.2%;
+				width: auto;
+				border-bottom:none;
+				background-color: transparent;
+				height: 0.5%;
+			}
+			body:not(:target) #menu li a:hover{
+				color: #fff;
+				background-color: #00A876;
+			}
+			body:not(:target) #menu .back{
+				display: none;
+			}
+			/*#border{
+			height:0.5%;
+			width:100%;
+			margin: 0 auto;
+			background-color: #ff0000;
+			padding: 0;
+			}*/
+			#border{
+				display: none;
+			}
+			.header-demo h4{
+				color:#666;
+				text-align: left;
+				padding: 1.1%;
+				font-family: bold;
+			}
+			.header-demo{
+				background-color: #fff;
+				height: auto;
+			}
+			#header{width: 100%;height: 2.5em;}
+			#header h4{width:32.26%;float: left;height:0.5%;}
+			#main-nav{width:66.13%;float: right;}
+			a{
+			text-decoration: none;
+			font-family: bold;
+			-webkit-transition: opacity 0.2s ease-in-out;
+			-moz-transition: opacity 0.2s ease-in-out;
+			-o-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
+			}
+			a:hover{
+				opacity: 0.8;
+			}
+			body:not(:target) #menu{
+			margin: 0;
+			padding-top:0;
+			position: absolute;
+			top: 0;
+			right:0;
+			left: 0;
+			
+			}
+			#content .content{
+				width: 100%;background-color: #333;display: block;
+			}
+			#footerFinale{
+			background-color: #fff;
+			}
+			#footerFinale p{
+			color:#666;
+			}
+		}
